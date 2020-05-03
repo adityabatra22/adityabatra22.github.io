@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bookish Freaks</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+    #fl {
+
+        margin-top: 50px;
+        margin-right: 50px;
+        
+
+    }
+
+    #fr {
+        display: none;
+        margin-top: 50px;
+        margin-right: 50px;
+
+    }
+
+    #c1 {
+        float: left;
+       
+    }
+</style>
+<script>
+    $(document).ready(function() {
+        $("#b1").click(function() {
+            $("#fr").toggle();
+            $("#fl").toggle();
+
+        });
+    });
+</script>
+<script>
+    (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+
+            var forms = document.getElementsByClassName('needs-validation');
+
+            var validation = Array.prototype.filter.call(forms, function(form) {
+                form.addEventListener('submit', function(event) {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        }, false);
+    })();
+</script>
+
+<body style="background-image: url(zimg/photo-1535905748047-14b2415c77d5.jfif)">
+    <br><br>
+    <div>
+        <nav class="navbar bg-danger navbar-dark container fixed-top">
+            <a class="navbar-brand" href="Main.html">
+                <h2>Bookish Freaks</h2>
+            </a>
+        </nav>
+    </div><br>
+    <div class="container bg-dark" style="height:655px">
+        <br><br>
+        <div style="width: 70%" id="c1">
+            <div id="demo" class="carousel slide" data-ride="carousel" data-interval="1000">
+
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1" class="active"></li>
+                    <li data-target="#demo" data-slide-to="2" class="active"></li>
+                    <li data-target="#demo" data-slide-to="3" class="active"></li>
+                </ul>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="zimg/sixofcrows.jpg" width="750" height="500">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="zimg/thereckless.jpg" width="750" height="500">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="zimg/thelostsymbol.jpg" width="750" height="500">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="zimg/thewomaninthewindow.jpg" width="750" height="500">
+                    </div>
+                </div>
+
+
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+            </div>
+            <div id="fl" style="float: right">
+                <h3 class="text-white">LOGIN</h3>
+                <form class="needs-validation" novalidate action="Main.html">
+                    <div class="form-group">
+                        <label for="name" class="text-white">Username</label>
+                        <input type="text" placeholder="Enter Username" required class="form-control mr-sm-auto bg-dark text-white">
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="text-white">Password</label>
+                        <input type="password" placeholder="Enter Password" required class="form-control mr-sm-auto bg-dark text-white">
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    <div class="form-group form-check">
+                        <label class="form-check-label">
+                            <input class="text-white form-check-input" type="checkbox" name="remember" required>
+                            <p class="text-white">Remember Me.</p>
+                            <div class="valid-feedback">Valid.</div>
+                            <div class="invalid-feedback">Check this checkbox to continue.</div>
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-danger btn-block" id="B1">LOG IN</button><br>
+                    <div class="text-white text-center">OR</div><br>
+                    <button class="text-white btn btn-danger btn-block" id="b1">SIGNUP</button>
+
+                </form>
+            </div>
+            <div id="fr" style="float:right">
+                <h3 class="text-white">SIGN UP</h3>
+                <form class="needs-validation" novalidate action="Main.html">
+                    <div class="form-group">
+                        <label for="name" class="text-white">Name</label>
+                        <input type="text" placeholder="Enter Your Name" required class="form-control mr-sm-auto bg-dark text-white">
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="pass" class="text-white">Password</label>
+                        <input type="password" placeholder="Enter Password" required class="form-control mr-sm-auto bg-dark text-white">
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    <div>
+                        <label for="name" class="text-white">Mobile Number</label>
+                        <input type="number" placeholder="Enter Mobile Number" required class="form-control mr-sm-auto bg-dark text-white">
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="text-white">Email</label>
+                        <input type="text" placeholder="Enter Email" required class="form-control mr-sm-auto bg-dark text-white">
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    <button type="submit" class="btn btn-danger btn-block" id="B1">SIGN UP</button><br>
+                </form>
+            </div>
+        </div>
+        <div>
+            <nav class="navbar bg-danger navbar-dark container fixed-bottom justify-content-center">
+                <a class="navbar-brand" href="Main.html">
+                    Copyright © 2020 Bookish Freaks | All rights reserved.
+                </a>
+            </nav>
+        </div>
+    
+</body></html>

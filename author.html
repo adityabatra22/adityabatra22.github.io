@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>Bookish Freaks</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<style>
+    img{
+        width: 150px;
+        height: 200px;
+    }  
+    .im{
+        width: 150px;
+    }
+    
+</style>
+   <body style="background-image: url(zimg/photo-1535905748047-14b2415c77d5.jfif)">
+    <div><nav class="navbar bg-danger navbar-dark container fixed-top">
+        <a class="navbar-brand" href="Main.html">
+            <h2>Bookish Freaks</h2>
+        </a>
+    </nav></div><br><br>
+    <div class="container bg-dark" style="height: 656px"><br><br>
+        
+     <div class="row">
+            <div class="col"><a href="Main.html" style="display: block"><div class="btn btn-danger btn-block text-white">Home</div></a></div>
+            <div class="col "><a href="categories.html" style="display: block"><div class="btn btn-danger btn-block text-white">Categories</div></a></div>
+            <div class="col"><a href="about.html" style="display: block"><div class="btn btn-danger btn-block text-white">About Us</div></a></div> 
+        </div><br>
+        
+        <div><h2 class="text-white">Famous Authors</h2>
+             <div id="dcat" style="display: none" class="row">
+           
+            <div class="col-sm-4">
+                <img src="zimg/photo-1576260735040-0161203bab23.jfif" style="width: 320px;height: 300px"><a class="btn btn-danger btn-block text-white" style="width: 320px" href="genre.html">Genre</a>
+           </div>
+           <div class="col-sm-4">
+                <img src="zimg/author.jfif" style="width: 320px;height: 300px"><a class="btn btn-danger btn-block text-white" style="width: 320px"  href="author.html">Author</a>
+           </div>
+           <div class="col-sm-4">
+                <img src="zimg/background%20img.jpeg"  style="width: 320px;height: 300px"><a class="btn btn-danger btn-block text-white" style="width: 320px"  href="book.html">Books</a>
+           </div>
+        </div>
+        </div>
+        <div id="aut">
+            
+       
+       <div class="row">
+           <div class="col"></div>
+       </div>
+        <div class="row">
+           
+            <div class="col-sm-3">
+            <div class="im1">
+                <a href="book.html"><img src="zimg/jkr.jpg" alt="alligent"></a>
+            </div>
+            <div class="name1" style="display: none">
+                <div class="bg-danger text-white" style="width: 150px"><center>JK Rowling</center></div>
+            </div>
+           
+            </div><br>
+            <div class="col-sm-3">
+            <div class="im2">
+                <a href="book.html"><img src="zimg/apj%20abdul%20kalam.jpg" alt="alligent"></a>
+            </div>
+            <div class="name2" style="display: none">
+                <div class="bg-danger text-white" style="width: 150px"><center>APJ Abdul Kalam</center></div>
+            </div>
+            </div><br>
+            <div class="col-sm-3">
+            <div class="im3">
+                <a href="book.html"><img src="zimg/stephanie_meyer.jpg" alt="alligent"></a>
+            </div>
+            <div class="name3" style="display: none">
+                <div class="bg-danger text-white" style="width: 150px"><a href="book.html" class="text-white"><center>Stephanie Meyer</center></a></div>
+            </div>
+            </div><br>
+            <div class="col-sm-3">
+            <div class="im4">
+                <a href="book.html"><img src="zimg/ruth.jpg" alt="alligent"></a>
+            </div>
+            
+             <div class="name4" style="display: none">
+                 <div class="bg-danger text-white" style="width: 150px"><center>Ruth ware</center></div>
+            </div>
+            </div><br>
+        </div><br>
+        <div class="row">
+            <div class="col-sm-3">
+            <div class="im5">
+                <a href="book.html"><img src="zimg/johngr.jpg" alt="alligent"></a>
+            </div>
+           
+             <div class="name5" style="display: none">
+                 <div class="bg-danger text-white" style="width: 150px"><center>John Green</center></div>
+            </div>
+            </div><br>
+            <div class="col-sm-3">
+            <div class="im6">
+                <a href="book.html"><img src="zimg/paulo.jpg" alt="alligent"></a>
+            </div>
+           
+             <div class="name6" style="display: none">
+                 <div class="bg-danger text-white" style="width: 150px"><center>Paulo Coehlo</center></div>
+            </div>
+            </div><br>
+            <div class="col-sm-3">
+            <div class="im7">
+                <a href="book.html"><img src="zimg/paula%20hawkins.jpg" alt="alligent"></a>
+            </div>
+            
+             <div class="name7" style="display: none">
+                 <div class="bg-danger text-white" style="width: 150px"><center>Paula Hawkins</center></div>
+            </div>
+            </div><br>
+            <div class="col-sm-3">
+            <div class="im8">
+                <a href="book.html"><img src="zimg/rls.jpg" alt="alligent"></a>
+            </div>
+            
+             <div class="name8" style="display: none">
+                 <div class="bg-danger text-white" style="width: 150px"><a href="book.html" class="text-white"><center>RL Stine</center></a></div>
+            </div>
+            </div><br>
+        </div><br>
+         <nav class="navbar bg-danger navbar-dark container fixed-bottom justify-content-center">
+                <a class="navbar-brand" href="Main.html">
+                    Copyright © 2020 Bookish Freaks | All rights reserved.
+                </a>
+            </nav><br><br><br>
+       </div>
+    </div>
+       <script>
+    $(document).ready(function(){
+       $("#home").click(function(){
+          $("#dhome").toggle(); 
+       });
+        $("#cat").click(function(){
+           $("#dcat").show(); 
+            $("#aut").hide();
+        });
+        $(".im1").hover(function(){
+            $(".name1").slideToggle();
+        });
+        $(".im2").hover(function(){
+            $(".name2").slideToggle();
+        });
+        $(".im3").hover(function(){
+            $(".name3").slideToggle();
+        });
+        $(".im4").hover(function(){
+            $(".name4").slideToggle();
+        });
+        $(".im5").hover(function(){
+            $(".name5").slideToggle();
+        });
+        $(".im6").hover(function(){
+            $(".name6").slideToggle();
+        });
+        $(".im7").hover(function(){
+            $(".name7").slideToggle();
+        });
+        $(".im8").hover(function(){
+            $(".name8").slideToggle();
+        });
+        
+    });
+    </script>
+       
+</body>
+</html>
